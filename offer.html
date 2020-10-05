@@ -96,74 +96,92 @@
 
 
                 </div>
-                
+               
             </div>
 
         </nav>
+        <!-- full Title -->
         <div class="full-title">
             <div class="container">
                 <!-- Page Heading/Breadcrumbs -->
-                <h1 class="mt-4 mb-3">TEKLİF TALEBİ</h1>
+                <h1 class="mt-4 mb-3">İLETİŞİM </h1>
                 <div class="breadcrumb-main">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="./Index.html">ANASAYFA</a>
                         </li>
-                        <li class="breadcrumb-item active">TEKLİF TALEBİ</li>
+                        <li class="breadcrumb-item active">İLETİŞİM</li>
                     </ol>
                 </div>
             </div>
         </div>
-        <div class="contact-main">
 
-            <div class="container">
-                <!-- Content Row -->
-                <div class="row">
-                    <!-- Map Column -->
-
-                    <div class="col-lg-8 mb-4 contact-left">
-
-                        <h3>Talebinizi Bize Bildirin.</h3>
-                        <form name="sentMessage" id="contactForm" novalidate>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <input type="text" placeholder="İsim Soyisim" name="adSoyad" class="form-control harf" id="adSoyad" required data-validation-required-message="Lütfen isim soyisim giriniz.">
-                                    <p class="help-block"></p>
-                                </div>
-                            </div>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <input type="email" placeholder="E-mail" name="email" class="form-control" id="email" required data-validation-required-message="Lütfen e-mail adresi giriniz.">
-                                </div>
-                            </div>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <input type="text" placeholder="Konu" name="konu" class="form-control harf" id="konu" required data-validation-required-message="Lütfen konu giriniz.">
-                                    <p class="help-block"></p>
-                                </div>
-                            </div>
-                            <div class="control-group form-group">
-                                <div class="controls">
-                                    <textarea rows="5" cols="100" placeholder="Mesaj" name="mesaj" class="form-control" id="mesaj" required data-validation-required-message="Lütfen mesaj yazınız." maxlength="250" style="resize:none"></textarea>
-                                </div>
-                            </div>
-                            <div id="success"></div>
-                            <!-- For success/fail messages -->
-                            <button type="submit" class="btn btn-primary" id="btn">Gönder</button>
-                        </form>
+        <div class="bg-contact100" style="background-image: url('images2/bg-01.jpg');">
+            <div class="container-contact100">
+                <div class="wrap-contact100">
+                    <div class="contact100-pic js-tilt" data-tilt>
+                        <img src="images/img-02.png" alt="IMG">
                     </div>
-                    <!-- Contact Details Column -->
-                   
+    
+                    <form class="contact100-form validate-form">
+                        <span class="contact100-form-title">
+                           TEKLİF TALEBİ
+                        </span>
+    
+                        <div class="wrap-input100 validate-input" data-validate = "Name is required">
+                            <input class="input100" type="text" name="name" placeholder="Ad Soyad">
+                            <span class="focus-input101"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        
+                        <div class="wrap-input100 validate-input" data-validate = "Tel is required">
+                            <input class="input100" type="text" name="Tel" placeholder="Telefon">
+                            <span class="focus-input101"></span>
+                            <span class="symbol-input100">
+                                <i class="fa  fa-phone" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+    
+                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                            <input class="input100" type="text" name="email" placeholder="Email">
+                            <span class="focus-input101"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                            <input class="input100" type="text" name="Konu" placeholder="Konu">
+                            <span class="focus-input101"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                            </span>
+                        </div>
+    
+                        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                            <textarea class="input100" name="message" placeholder="Mesaj"></textarea>
+                            <span class="focus-input101"></span>
+                        </div>
+    
+                        <div class="container-contact101-form-btn">
+                            <button class="contact101-form-btn">
+                                Gonder
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <!-- /.row -->
             </div>
-            <!-- /.container -->
         </div>
+    </div>
         <footer class="footer-distributed">
 
             <div class="footer-left">
       
-              <img class="footer-logo" src="./images/Logo12.png" alt="">
+              <img class="footer-logo" src="./images/logo-white.png" alt="">
       
               <p class="footer-links">
                 <a href="#" class="link-1">Ana Sayfa</a>
@@ -222,16 +240,34 @@
           </footer>
 
     </div>
-            <!-- Bootstrap core JavaScript -->
-            <script src="./vendor/jquery/jquery.min.js"></script>
-            <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <script src="./js/imagesloaded.pkgd.min.js"></script>
-            <script src="./js/isotope.pkgd.min.js"></script>
-            <script src="./js/filter.js"></script>
-            <script src="./js/jquery.appear.js"></script>
-            <script src="./js/owl.carousel.min.js"></script>
-            <script src="./js/jquery.fancybox.min.js"></script>
-            <script src="./js/script.js"></script>
+    <script src="./vendor2/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="./vendor2/bootstrap/js/popper.js"></script>
+        <script src="./vendor2/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="./vendor2/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="./vendor2/tilt/tilt.jquery.min.js"></script>
+        <script >
+            $('.js-tilt').tilt({
+                scale: 1.1
+            })
+        </script>
+    <!--===============================================================================================-->
+        <script src="./js/main.js"></script>
+
+        <script src="./js/jqBootstrapValidation.js"></script>
+        <script src="./js/contact_me.js"></script>
+                    <!-- Bootstrap core JavaScript -->
+                    <script src="./vendor2/jquery/jquery.min.js"></script>
+                    <script src="./vendor2/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <script src="./js/imagesloaded.pkgd.min.js"></script>
+                    <script src="./js/isotope.pkgd.min.js"></script>
+                    <script src="./js/filter.js"></script>
+                    <script src="./js/jquery.appear.js"></script>
+                    <script src="./js/owl.carousel.min.js"></script>
+                    <script src="./js/jquery.fancybox.min.js"></script>
+                    <script src="./js/script.js"></script>
 </body>
 </html>
 
