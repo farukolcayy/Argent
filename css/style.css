@@ -6,7 +6,6 @@ body {
 	color: #323232;
 }
 
-
 @media (min-width: 992px) {
 	body {
 		padding-top: 0px;
@@ -100,10 +99,11 @@ button.btn-secondary:hover {
 	margin: 0px;
 	padding: 0px;
 }
-@media (min-width: 1200px){
- .container{
-    max-width: 1300px;
-}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1300px;
+	}
 }
 
 .social-media ul li {
@@ -1339,10 +1339,10 @@ footer p {
 
 .left-ab ul li {
 	position: relative;
-    font-weight: 300;
-    list-style: none;
-    line-height: 32px;
-    font-size: 17px;
+	font-weight: 300;
+	list-style: none;
+	line-height: 32px;
+	font-size: 17px;
 }
 
 .left-ab ul li::before {
@@ -12108,7 +12108,7 @@ textarea.input100 {
 	width: 100%;
 	height: 100%;
 	box-shadow: 0px 0px 0px 0px;
-	color: rgba(87,184,70, 0.5);
+	color: rgba(87, 184, 70, 0.5);
 }
 
 .focus-input100 {
@@ -12128,6 +12128,7 @@ textarea.input100 {
 	-webkit-animation: anim-shadow 0.5s ease-in-out forwards;
 	animation: anim-shadow 0.5s ease-in-out forwards;
 }
+
 .input100:focus+.focus-input101 {
 	-webkit-animation: anim-shadow 0.5s ease-in-out forwards;
 	animation: anim-shadow 0.5s ease-in-out forwards;
@@ -12174,10 +12175,12 @@ textarea.input100 {
 	color: #846add;
 	padding-left: 22px;
 }
+
 .input100:focus+.focus-input101+.symbol-input100 {
 	color: #57b846;
 	padding-left: 22px;
 }
+
 /*------------------------------------------------------------------
 [ Button ]*/
 
@@ -12192,11 +12195,12 @@ textarea.input100 {
 	justify-content: center;
 	padding-top: 20px;
 }
+
 .contact101-form-btn {
 	width: 100%;
 	height: 50px;
 	border-radius: 25px;
-	background:  #57b846;
+	background: #57b846;
 	font-family: Montserrat-Bold;
 	font-size: 15px;
 	line-height: 1.5;
@@ -12214,6 +12218,7 @@ textarea.input100 {
 	-moz-transition: all 0.4s;
 	transition: all 0.4s;
 }
+
 .contact100-form-btn {
 	width: 100%;
 	height: 50px;
@@ -12475,7 +12480,6 @@ textarea.input100 {
 
 .footer-distributed .footer-company-about {
 	line-height: 20px;
-	
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
@@ -12770,113 +12774,99 @@ textarea.input100 {
 	font-size: 17px;
 }
 
-
-
 /*******************************************************************/
 
-
-.center
-{
-  
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.center {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* End Non-Essential  */
 
-.property-card
-{
+.property-card {
 	height: 24em;
-    width: 19em;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  position:relative;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius:16px;
-  overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+	width: 19em;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	position: relative;
+	-webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	border-radius: 16px;
+	overflow: hidden;
+	-webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+	box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
 }
+
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
 /* Top Half of card, image. */
 
-.property-image
-{
-  height: 10em;
-  width: 19em;
-  padding:1em 2em;
-  position:Absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.800, 0.045, 0.355, 1);
-  
-  background-size:cover;
-  background-repeat:no-repeat;
+.property-image {
+	height: 10em;
+	width: 19em;
+	padding: 1em 2em;
+	position: Absolute;
+	top: 0px;
+	-webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.4s cubic-bezier(0.800, 0.045, 0.355, 1);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /* Bottom Card Section */
 
-.property-description
-{
-  background-color: #FAFAFC;
-  height: 14em;
-    width: 19em;
-  position:absolute;
-  bottom:0em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
-  text-align:center;
+.property-description {
+	background-color: #FAFAFC;
+	height: 14em;
+	width: 19em;
+	position: absolute;
+	bottom: 0em;
+	-webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	padding: 0.5em 1em;
+	text-align: center;
 }
 
 /* Social Icons */
 
-.property-social-icons
-{
-  width:1em;
-  height:1em;
-  position:absolute;
-  bottom:1em;
-  left:1em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+.property-social-icons {
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+	-webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 /* Property Cards Hover States */
 
-.property-card:hover .property-description
-{
-  height:100px;
-  padding:0px 1em;
-}
-.property-card:hover .property-image
-{
-  height:17em;
+.property-card:hover .property-description {
+	height: 100px;
+	padding: 0px 1em;
 }
 
-.property-card:hover .property-social-icons
-{
-  background-color:white;
+.property-card:hover .property-image {
+	height: 17em;
 }
 
-.property-card:hover .property-social-icons:hover
-{
- 
-  cursor:pointer;
+.property-card:hover .property-social-icons {
+	background-color: white;
 }
 
+.property-card:hover .property-social-icons:hover {
+	cursor: pointer;
+}
 
 /*********************************/
