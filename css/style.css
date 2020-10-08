@@ -12599,7 +12599,7 @@ textarea.input100 {
 }
 
 .blog-card .description {
-	padding: 1rem;
+	padding: 9px;
 	background: #fff;
 	position: relative;
 	z-index: 1;
@@ -12662,7 +12662,7 @@ textarea.input100 {
 	position: absolute;
 	height: 7px;
 	background: #5ad67d;
-	width: 500px;
+	width: 570px;
 	top: -0.75rem;
 	border-radius: 3px;
 }
@@ -12763,7 +12763,7 @@ textarea.input100 {
 /* Top Half of card, image. */
 
 .property-image {
-	height: 10em;
+	height: 19em;
 	width: 19em;
 	padding: 1em 2em;
 	position: Absolute;
@@ -12779,7 +12779,7 @@ textarea.input100 {
 
 .property-description {
 	background-color: #FAFAFC;
-	height: 14em;
+	height: 5em;
 	width: 19em;
 	position: absolute;
 	bottom: 0em;
