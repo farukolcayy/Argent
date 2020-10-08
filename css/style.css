@@ -12,6 +12,11 @@ body {
 	}
 }
 
+@font-face{
+	font-family: Poppins;
+	src: url(../fonts/poppins/Poppins-Bold.ttf);
+}
+
 @font-face {
 	font-family: Montserrat-Regular;
 	src: url('../fonts/montserrat/Montserrat-Regular.ttf');
@@ -12291,59 +12296,7 @@ textarea.input100 {
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 
-.validate-input {
-	position: relative;
-}
 
-.alert-validate::before {
-	content: attr(data-validate);
-	position: absolute;
-	max-width: 70%;
-	background-color: white;
-	border: 1px solid #c80000;
-	border-radius: 13px;
-	padding: 4px 25px 4px 10px;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 8px;
-	pointer-events: none;
-	font-family: Montserrat-Medium;
-	color: #c80000;
-	font-size: 13px;
-	line-height: 1.4;
-	text-align: left;
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition: opacity 0.4s;
-	-o-transition: opacity 0.4s;
-	-moz-transition: opacity 0.4s;
-	transition: opacity 0.4s;
-}
-
-.alert-validate::after {
-	content: "\f06a";
-	font-family: FontAwesome;
-	display: block;
-	position: absolute;
-	color: #c80000;
-	font-size: 15px;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 13px;
-}
-
-.alert-validate:hover:before {
-	visibility: visible;
-	opacity: 1;
-}
 
 @media (max-width: 992px) {
 	.alert-validate::before {
@@ -12709,7 +12662,7 @@ textarea.input100 {
 	position: absolute;
 	height: 7px;
 	background: #5ad67d;
-	width: 50px;
+	width: 500px;
 	top: -0.75rem;
 	border-radius: 3px;
 }
@@ -12840,6 +12793,8 @@ textarea.input100 {
 /* Social Icons */
 
 .property-social-icons {
+
+	
 	width: 1em;
 	height: 1em;
 	position: absolute;
@@ -12862,7 +12817,6 @@ textarea.input100 {
 }
 
 .property-card:hover .property-social-icons {
-	background-color: white;
 }
 
 .property-card:hover .property-social-icons:hover {
@@ -12870,3 +12824,175 @@ textarea.input100 {
 }
 
 /*********************************/
+.banner-area .banner-bg {
+	width:100%;
+	height:640px;
+	background-color:#b0b0b0;
+	background-image:url(/business/banner-bg.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	}
+	
+	.banner-area .banner-text {
+		padding: 15px 10% 31px 5%
+	}
+	.secondary-btn {
+		color:#222;
+		font-family:"Open Sans",sans-serif;
+		text-transform:uppercase;
+		font-size:14px;
+		font-weight:600;
+		display:inline-block;
+		-webkit-transition:all .5s;
+		-moz-transition:all .5s;
+		-o-transition:all .5s;
+		transition:all .5s;
+		}
+
+
+		.banner-text{
+        color :#1273eb;
+        text-transform:uppercase;
+        font-family:Poppins,sans-serif;
+        font-weight:700;
+         font-size:14px;
+		}
+		.py-3{
+			color: #777;
+			font-family: "Open Sans",sans-serif;
+			font-weight: 400;
+		}
+
+
+		/*********************************************************************/
+
+
+
+
+
+		.cv-button {
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin: 0;
+  min-height: 20vh;
+  
+}
+
+button {
+  
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

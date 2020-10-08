@@ -21,10 +21,18 @@
     <link href="./css/jquery.fancybox.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="./css/style.css" rel="stylesheet" />
-
+    <link rel="shortcut icon" type="image/png" href="/argentIco.png"/>
 
 </head>
 <body> 
+
+  <div id="ftco-loader" class="show fullscreen"
+  style="background: white url(./images/loadGif.gif) no-repeat center center;">
+
+    </div>
+
+
+
     <div class="wrapper-main">
         <!-- Top Bar -->
         <!-- Navigation -->
@@ -76,7 +84,7 @@
                             <a class="nav-link" href="./contact.html">İLETİŞİM</a>
                         </li>
                 
-                        <li class="nav-item dropdown" style="margin-left:15px; margin-top:10px;">
+                        <!-- <li class="nav-item dropdown" style="margin-left:15px; margin-top:10px;">
                             <a class="nav-item" href="" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-search"></i> </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                                 <form action="#">
@@ -88,7 +96,7 @@
                                     </div>
                                 </form>
                             </div>
-                        </li>
+                        </li> -->
                         <li>
                             <div class="input-group" style="margin-left:15px; margin-top:5px;">
                                 <span class="input-group-btn">
@@ -174,17 +182,17 @@
               <img class="footer-logo" src="./images/logo-white.png" alt="">
       
               <p class="footer-links">
-                <a href="#" class="link-1">Ana Sayfa</a>
-                
-               
-              
-                <a href="#">Duyurular</a>
-              
-                <a href="#">Teklif Talebi</a>
-                
-                <a href="#">Kariyer</a>
-                
-                <a href="#">İletişim</a>
+                <a href="./Index.html" class="link-1">Ana Sayfa</a>
+
+
+
+        <a href="./blog.html">Duyurular</a>
+
+        <a href="./offer.html">Teklif Talebi</a>
+
+        <a href="./career.html">Kariyer</a>
+
+        <a href="./contact.html">İletişim</a>
               </p>
       
               <p class="footer-company-name">Argent Finansal Denetim ve Danışmanlık A.Ş. © 2020</p>
@@ -199,12 +207,12 @@
       
               <div>
                 <i class="fas fa-phone"></i>
-                <p>0541 679 23 06</p>
+                <a href="tel:0541 679 23 06"><p>0541 679 23 06</p></a>
               </div>
       
               <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="">info@argentdenetim.com</a></p>
+                <p><a href="mailto:info@argentdenetim.com">info@argentdenetim.com</a></p>
               </div>
       
             </div>
@@ -230,6 +238,13 @@
           </footer>
 
     </div>
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $('#ftco-loader').removeClass('show');
+        }, 1000);
+      });
+    </script>
             <!-- Bootstrap core JavaScript -->
             <script src="./vendor/jquery/jquery.min.js"></script>
             <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

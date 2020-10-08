@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
     <link href="./css/all.css" rel="stylesheet" />
-
+    <link rel="shortcut icon" type="image/png" href="/argentIco.png"/>
     <!-- Owl Carousel CSS -->
     <link href="./css/owl.carousel.min.css" rel="stylesheet" />
     <!-- Owl Carousel CSS -->
@@ -24,6 +24,11 @@
 
 </head>
 <body> 
+    <div id="ftco-loader" class="show fullscreen"
+   
+    style="background: white url(./images/loadGif.gif) no-repeat center center;">
+  
+      </div>
     <div class="wrapper-main">
         <nav class="navbar navbar-expand-lg navbar-dark bg-light top-nav">
             <div class="container">
@@ -72,7 +77,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./contact.html">İLETİŞİM</a>
                         </li>
-                        <li class="nav-item dropdown" style="margin-left:15px; margin-top:10px;">
+                        <!-- <li class="nav-item dropdown" style="margin-left:15px; margin-top:10px;">
                             <a class="nav-item" href="" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-search"></i> </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                                 <form action="#">
@@ -84,7 +89,7 @@
                                     </div>
                                 </form>
                             </div>
-                        </li>
+                        </li> -->
                         <li>
                             <div class="input-group" style="margin-left:15px; margin-top:5px;">
                                 <span class="input-group-btn">
@@ -129,7 +134,7 @@
                         </span>
     
                         <div class="wrap-input100 validate-input" data-validate = "Name is required">
-                            <input class="input100" type="text" name="name" placeholder="Ad Soyad">
+                            <input class="input100" type="text" name="name" placeholder="Ad Soyad" required>
                             <span class="focus-input101"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-user" aria-hidden="true"></i>
@@ -138,7 +143,7 @@
 
                         
                         <div class="wrap-input100 validate-input" data-validate = "Tel is required">
-                            <input class="input100" type="text" name="Tel" placeholder="Telefon">
+                            <input class="input100" type="text" name="Tel" placeholder="Telefon" required>
                             <span class="focus-input101"></span>
                             <span class="symbol-input100">
                                 <i class="fa  fa-phone" aria-hidden="true"></i>
@@ -147,7 +152,7 @@
 
     
                         <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                            <input class="input100" type="text" name="email" placeholder="Email">
+                            <input class="input100" type="text" name="email" placeholder="Email" required>
                             <span class="focus-input101"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -155,7 +160,7 @@
                         </div>
 
                         <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                            <input class="input100" type="text" name="Konu" placeholder="Konu">
+                            <input class="input100" type="text" name="Konu" placeholder="Konu" required>
                             <span class="focus-input101"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-comments" aria-hidden="true"></i>
@@ -163,7 +168,7 @@
                         </div>
     
                         <div class="wrap-input100 validate-input" data-validate = "Message is required">
-                            <textarea class="input100" name="message" placeholder="Mesaj"></textarea>
+                            <textarea class="input100" name="message" placeholder="Mesaj" required></textarea>
                             <span class="focus-input101"></span>
                         </div>
     
@@ -184,17 +189,17 @@
               <img class="footer-logo" src="./images/logo-white.png" alt="">
       
               <p class="footer-links">
-                <a href="#" class="link-1">Ana Sayfa</a>
-                
-               
-              
-                <a href="#">Duyurular</a>
-              
-                <a href="#">Teklif Talebi</a>
-                
-                <a href="#">Kariyer</a>
-                
-                <a href="#">İletişim</a>
+                <a href="./Index.html" class="link-1">Ana Sayfa</a>
+
+
+
+                <a href="./blog.html">Duyurular</a>
+        
+                <a href="./offer.html">Teklif Talebi</a>
+        
+                <a href="./career.html">Kariyer</a>
+        
+                <a href="./contact.html">İletişim</a>
               </p>
       
               <p class="footer-company-name">Argent Finansal Denetim ve Danışmanlık A.Ş. © 2020</p>
@@ -209,12 +214,12 @@
       
               <div>
                 <i class="fas fa-phone"></i>
-                <p>0541 679 23 06</p>
+                <a href="tel:0541 679 23 06"><p>0541 679 23 06</p></a>
               </div>
       
               <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="">info@argentdenetim.com</a></p>
+                <p><a href="mailto:info@argentdenetim.com">info@argentdenetim.com</a></p>
               </div>
       
             </div>
@@ -240,6 +245,13 @@
           </footer>
 
     </div>
+    <script>
+        $(document).ready(function () {
+          setTimeout(function () {
+            $('#ftco-loader').removeClass('show');
+          }, 1000);
+        });
+      </script>
     <script src="./vendor2/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
         <script src="./vendor2/bootstrap/js/popper.js"></script>
