@@ -861,7 +861,7 @@ button.btn-secondary:hover {
 
 footer p {
 	font-size: 15px;
-	color: #CCC;
+	color: #fff;
 	padding-bottom: 0px;
 	margin-bottom: 8px;
 }
@@ -1266,6 +1266,7 @@ footer p {
 /* ---- All Pages CSS ---- */
 
 .full-title {
+	background-size:100% 100%;
 	padding: 100px 0px 0px 0px;
 	background: url(../images/all-title-bg.jpg) no-repeat center;
 	position: relative;
@@ -12308,15 +12309,14 @@ textarea.input100 {
 /********************************************************/
 
 .footer-distributed {
-	border-radius: 22px 22px 0px 0px;
-	background-size: cover;
-	min-height: 250px;
 	background: url(../images/footer-bg.jpg) no-repeat center;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left top;
+    border-radius: 22px 22px 0px 0px;
+
+	
 	padding: 55px 50px;
 }
 
@@ -12399,7 +12399,7 @@ textarea.input100 {
 }
 
 .footer-distributed .footer-center p span {
-	display: block;
+	
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 2;
@@ -12467,20 +12467,7 @@ textarea.input100 {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
-	.footer-distributed {
-		font: bold 14px sans-serif;
-	}
-	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-	.footer-distributed .footer-center i {
-		margin-left: 0;
-	}
-}
+
 
 .footer-distributed .footer-left {
 	width: 35%;
@@ -12715,7 +12702,7 @@ textarea.input100 {
 
 .blog-card {
 	max-width: 1000px;
-	height: 360px;
+	
 }
 
 .about-content {
@@ -12775,6 +12762,9 @@ textarea.input100 {
 	background-repeat: no-repeat;
 }
 
+.footer-distributed .footer-center p{
+	padding-top: 20px;
+}
 /* Bottom Card Section */
 
 .property-description {
@@ -12789,7 +12779,18 @@ textarea.input100 {
 	padding: 0.5em 1em;
 	text-align: center;
 }
-
+.property-description-ro2 {
+	background-color: #FAFAFC;
+	height: 5em;
+	width: 19em;
+	position: absolute;
+	bottom: 0em;
+	-webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	padding: 0.5em 1em;
+	text-align: center;
+}
 /* Social Icons */
 
 .property-social-icons {
@@ -12816,8 +12817,7 @@ textarea.input100 {
 	height: 17em;
 }
 
-.property-card:hover .property-social-icons {
-}
+
 
 .property-card:hover .property-social-icons:hover {
 	cursor: pointer;
@@ -12828,7 +12828,7 @@ textarea.input100 {
 	width:100%;
 	height:640px;
 	background-color:#b0b0b0;
-	background-image:url(/business/banner-bg.jpg);
+	background-image:url(/business/carerre.jpg);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:cover;
@@ -12979,7 +12979,509 @@ button:hover .button-text {
     align-self: center;
     justify-self: center;
   }
+
+
+
+
+
+/************************FOOTER RESPONSİVE****************************************/
+
+
+@media (max-width:370px){
+
+	.carousel-item{
+		
+		max-height: 200px;
+	}
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: block;
+		width: 100%;
+		
+		text-align: center;
+	}
+	.footer-distributed .footer-center i {
+		margin-left: 0;
+	}
+	.footer-distributed .footer-left {
+		width: 100%;
+	}
+	.footer-distributed .footer-center {
+		width: 100%;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed {
+		margin-bottom: 0px;
+	}
+	.footer-distributed{
+		padding: 0px 50px;
+	}
+	.navbar-brand{
+		padding-left: 10px;
+	}
+	.fixed-menu{
+		padding: 0px 15px;
+	}
+	.blog-card .description h1{
+		font-size: 23px;
+	}
+	.blog-card {
+		max-width: 1000px;
+		max-height: 1000px;
+	}
+	.about-content{
+		font-size: 19px;
+	}
+	.footer-right{
+      margin-bottom: 0px;
+	}
+
+	.full-title {
+		 background-size: 100% 100%; 
+		
+	}
+	.footer-distributed .footer-center p {
+		padding-bottom: 19px;
+		padding-top: 4px;
+	}
+
+
+/*********************CAREER RESPONSİVE*************************************/
+
+   .banner-area .banner-bg {
+    height: 315px;
 }
+.banner-text2{
+ font-size: 35px;
+}
+.banner-text{
+  font-size: 13px;
+}
+.property-image{
+	background-size: 100% 100%;
+}
+/********************Header****************************/
+.slider-main .carousel .carousel-item .carousel-caption h3 {
+    font-size: 27px;
+  
+}
+.slider-main .carousel .carousel-item .carousel-caption p {
+    font-size: 15px;
+}
+
+.d-none {
+    display: block !important;
+}
+
+
+
+
+
+
+
+}
+
+
+@media (min-width:371px )and (max-width: 575px){
+	.footer-distributed .footer-center p {
+		padding-bottom: 19px;
+		padding-top: 4px;
+	}
+	
+	.footer-distributed .footer-company-about{
+		line-height: 14px;
+	}
+	.carousel-item{
+		
+		max-height: 200px;
+	}
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: block;
+		width: 100%;
+		
+		text-align: center;
+	}
+	.footer-distributed .footer-center i {
+		margin-left: 0;
+	}
+	.footer-distributed .footer-left {
+		width: 100%;
+	}
+	.footer-distributed .footer-center {
+		width: 100%;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		padding-bottom: 12px;
+	}
+	.footer-distributed{
+		padding: 0px 50px;
+	}
+	.navbar-brand{
+		padding-left: 10px;
+	}
+	.fixed-menu{
+		padding: 0px 15px;
+	}
+	.blog-card .description h1{
+		font-size: 23px;
+	}
+	.blog-card {
+		max-width: 1000px;
+		max-height: 1000px;
+	}
+	.about-content{
+		font-size: 19px;
+	}
+	.footer-right{
+      margin-bottom: 0px;
+	}
+
+/*********************CAREER RESPONSİVE*************************************/
+
+   .banner-area .banner-bg {
+    height: 315px;
+}
+.banner-text2{
+ font-size: 35px;
+}
+.banner-text{
+  font-size: 13px;
+}
+.property-image{
+	background-size: 101% 100%;
+}
+/********************Header****************************/
+.slider-main .carousel .carousel-item .carousel-caption h3 {
+    font-size: 27px;
+  
+}
+.slider-main .carousel .carousel-item .carousel-caption p {
+    font-size: 15px;
+}
+
+.d-none {
+    display: block !important;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+	padding-bottom: 15px;
+}
+
+.property-description-ro2{
+	width: 19em ;
+}
+
+}
+
+@media (min-width:576px)and (max-width:767px){
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		padding-bottom: 41px
+	}
+
+
+	
+	.carousel-item{
+		
+		max-height: 200px;
+	}
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: block;
+		width: 100%;
+		
+		text-align: center;
+	}
+	.footer-distributed .footer-center i {
+		margin-left: 0;
+	}
+	.footer-distributed .footer-left {
+		width: 100%;
+	}
+	.footer-distributed .footer-center {
+		width: 100%;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed {
+		margin-bottom: 0px;
+	}
+	.footer-distributed{
+		padding: 0px 50px;
+	}
+	.navbar-brand{
+		padding-left: 10px;
+	}
+	.fixed-menu{
+		padding: 0px 15px;
+	}
+	.blog-card .description h1{
+		font-size: 23px;
+	}
+	.blog-card {
+		max-width: 1000px;
+		max-height: 1000px;
+	}
+	.about-content{
+		font-size: 19px;
+	}
+	.footer-right{
+      margin-bottom: 0px;
+	}
+
+/*********************CAREER RESPONSİVE*************************************/
+
+   .banner-area .banner-bg {
+    height: 315px;
+}
+.banner-text2{
+ font-size: 35px;
+}
+.banner-text{
+  font-size: 13px;
+}
+.property-image{
+	background-size: 85% 100%;
+}
+/********************Header****************************/
+.slider-main .carousel .carousel-item .carousel-caption h3 {
+    font-size: 27px;
+  
+}
+.slider-main .carousel .carousel-item .carousel-caption p {
+    font-size: 15px;
+}
+
+.d-none {
+    display: block !important;
+}
+.property-description{
+	width: 16em;
+}
+.footer-logo {
+    width: 35%;
+    text-align: center;
+}
+
+.property-description-ro2{
+	width: 16em ;
+}
+
+}
+@media (min-width:768px) and (max-width:991px){
+	.container {
+		max-width: 900px;
+	}
+
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		padding-bottom: 12px;
+	}
+	.carousel-item{
+		
+		max-height: 200px;
+	}
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: block;
+		width: 100%;
+		
+		text-align: center;
+	}
+	.footer-distributed .footer-center i {
+		margin-left: 0;
+	}
+	.footer-distributed .footer-left {
+		width: 100%;
+	}
+	.footer-distributed .footer-center {
+		width: 100%;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed {
+		margin-bottom: 0px;
+	}
+	.footer-distributed{
+		padding: 0px 50px;
+	}
+	.navbar-brand{
+		padding-left: 10px;
+	}
+	.fixed-menu{
+		padding: 0px 15px;
+	}
+	.blog-card .description h1{
+		font-size: 23px;
+	}
+	.blog-card {
+		max-width: 1000px;
+		max-height: 1000px;
+	}
+	.about-content{
+		font-size: 19px;
+	}
+	.footer-right{
+      margin-bottom: 0px;
+	}
+
+/*********************CAREER RESPONSİVE*************************************/
+
+   .banner-area .banner-bg {
+    height: 315px;
+}
+.banner-text2{
+ font-size: 35px;
+}
+.banner-text{
+  font-size: 13px;
+}
+.property-image{
+	background-size: 69% 100%;
+}
+/********************Header****************************/
+.slider-main .carousel .carousel-item .carousel-caption h3 {
+    font-size: 27px;
+  
+}
+.slider-main .carousel .carousel-item .carousel-caption p {
+    font-size: 15px;
+}
+
+.d-none {
+    display: block !important;
+}
+.property-description{
+	width: 13em;
+}
+.footer-logo {
+    width: 30%;
+    text-align: center;
+}
+.property-description-ro2{
+	width: 13em ;
+}
+
+}
+
+
+
+
+@media (min-width:992px) and (max-width:1199px){
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		padding-bottom: 12px;
+	}
+	.carousel-item{
+		
+		max-height: 200px;
+	}
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+		display: block;
+		width: 100%;
+		
+		text-align: center;
+	}
+	.footer-distributed .footer-center i {
+		margin-left: 0;
+	}
+	.footer-distributed .footer-left {
+		width: 100%;
+	}
+	.footer-distributed .footer-center {
+		width: 100%;
+	}
+	.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed {
+		margin-bottom: 0px;
+	}
+	.footer-distributed{
+		padding: 0px 50px;
+	}
+	.navbar-brand{
+		padding-left: 10px;
+	}
+	.fixed-menu{
+		padding: 0px 15px;
+	}
+	.blog-card .description h1{
+		font-size: 23px;
+	}
+	.blog-card {
+		max-width: 1000px;
+		max-height: 1000px;
+	}
+	.about-content{
+		font-size: 19px;
+	}
+	.footer-right{
+      margin-bottom: 0px;
+	}
+
+/*********************CAREER RESPONSİVE*************************************/
+
+   .banner-area .banner-bg {
+    height: 315px;
+}
+.banner-text2{
+ font-size: 35px;
+}
+.banner-text{
+  font-size: 13px;
+}
+.property-image{
+	background-size: 100% 100%;
+}
+/********************Header****************************/
+.slider-main .carousel .carousel-item .carousel-caption h3 {
+    font-size: 27px;
+  
+}
+.slider-main .carousel .carousel-item .carousel-caption p {
+    font-size: 15px;
+}
+
+.d-none {
+    display: block !important;
+}
+
+	.property-description{
+		width: 14em;
+	}
+
+	.property-description-ro2{
+		width: 19em ;
+	}
+
+	.footer-logo {
+		width: 30%;
+		text-align: center;
+	}
+
+
+}
+
+@media (min-width:1201px){
+	.property-image{
+ background-size: 101% 100%;
+	}
+}
+
+
+
+
+
+
+
+
 
 
 
