@@ -68,9 +68,7 @@
                                 <a class="dropdown-item" href="./ozel.html">Özel Nitelikli Hizmetlerimiz</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./blog.html">DUYURULAR</a>
-                        </li>
+                       
 
                         <li class="nav-item">
                             <a class="nav-link" href="./offer.html">TEKLİF TALEBİ</a>
@@ -132,7 +130,7 @@
                         <img src="images/img-01.png" alt="IMG">
                     </div>
     
-                    <form class="contact100-form validate-form">
+                    <form id="formControl" class="contact100-form validate-form">
                         <span class="contact100-form-title">
                            İLETİŞİM
                         </span>
@@ -147,7 +145,7 @@
 
                         
                         <div class="wrap-input100 validate-input" data-validate = "Tel is required">
-                            <input class="input100" type="text" name="Tel" placeholder="Telefon" required>
+                            <input id="phoneNumber" class="input100" type="text" name="Tel" placeholder="Telefon" maxlength="16"  required>
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa  fa-phone" aria-hidden="true"></i>
@@ -156,7 +154,7 @@
 
     
                         <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                            <input class="input100" type="text" name="email" placeholder="Email" required>
+                            <input id="email" class="input100" type="email" name="email" placeholder="Email" required>
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -169,8 +167,8 @@
                         </div>
     
                         <div class="container-contact100-form-btn">
-                            <button class="contact100-form-btn">
-                                Gonder
+                            <button id="btn" type="submit" class="contact100-form-btn">
+                                Gönder
                             </button>
                         </div>
                     </form>
@@ -200,7 +198,7 @@
         
         
         
-                <a href="./blog.html">Duyurular</a>
+            
         
                 <a href="./offer.html">Teklif Talebi</a>
         
@@ -269,8 +267,10 @@
               </div>
         
             </div>
-           
-        
+            <div class="row">
+                <div class="col-md-12 text-center ">
+                <p> Copyright © 2020 Tüm Hakları Saklıdır | Bu web sitesi <a class="footer-end-content" href="https://badiworks.com/">BadiWorks <i class="fa fa-heart" aria-hidden="true"></i> </a>   tarafından tasarlanmıştır.</p></div>
+              </div>
         
           </footer>
     </div>
@@ -281,6 +281,82 @@
           }, 1000);
         });
       </script>
+
+
+<script>
+
+$( document ).ready(function() {
+    function MailKontrol(email)
+    {
+    var kontrol = new RegExp(/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/i);
+    return kontrol.test(email);
+    }
+
+    $( "#formControl" ).submit(function( event ) {
+        debugger
+        var emailValue=$("#email").val();
+        if (MailKontrol(emailValue)) {
+            alert("Email Doğru");
+        }else{
+            alert("Email Yanlış");
+        }
+        
+  event.preventDefault();
+});
+});
+</script>
+<script>
+
+const isNumericInput = (event) => {
+    const key = event.keyCode;
+    return ((key >= 48 && key <= 57) || // Allow number line
+        (key >= 96 && key <= 105) // Allow number pad
+    );
+};
+
+const isModifierKey = (event) => {
+    const key = event.keyCode;
+    return (event.shiftKey === true || key === 35 || key === 36) || // Allow Shift, Home, End
+        (key === 8 || key === 9 || key === 13 || key === 46) || // Allow Backspace, Tab, Enter, Delete
+        (key > 36 && key < 41) || // Allow left, up, right, down
+        (
+            // Allow Ctrl/Command + A,C,V,X,Z
+            (event.ctrlKey === true || event.metaKey === true) &&
+            (key === 65 || key === 67 || key === 86 || key === 88 || key === 90)
+        )
+};
+
+const enforceFormat = (event) => {
+    // Input must be of a valid number format or a modifier key, and not longer than ten digits
+    if(!isNumericInput(event) && !isModifierKey(event)){
+        event.preventDefault();
+    }
+};
+
+const formatToPhone = (event) => {
+    if(isModifierKey(event)) {return;}
+
+    // I am lazy and don't like to type things more than once
+    const target = event.target;
+    const input = target.value.replace(/\D/g,'').substring(0,10); // First ten digits of input only
+    const zip = input.substring(0,3);
+    const middle = input.substring(3,6);
+    const last = input.substring(6,10);
+
+    if(input.length > 6){target.value = `(${zip}) ${middle} - ${last}`;}
+    else if(input.length > 3){target.value = `(${zip}) ${middle}`;}
+    else if(input.length > 0){target.value = `(${zip}`;}
+};
+
+const inputElement = document.getElementById('phoneNumber');
+inputElement.addEventListener('keydown',enforceFormat);
+inputElement.addEventListener('keyup',formatToPhone);
+
+
+
+</script>
+
+
 
 
     <script src="./vendor2/jquery/jquery-3.2.1.min.js"></script>
